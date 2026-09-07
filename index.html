@@ -1,5 +1,5 @@
+```html
 <!DOCTYPE html>
-
 <html lang="ka">
 <head>
 <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 :root{
     --blush:#fce4ec;
     --rose:#d4a3a3;
-    --emerald:#163020;
+    --emerald:#d4a3a3;
     --gold:#b8965a;
 }
 
@@ -55,7 +55,7 @@ body{
     transition:transform 2.5s cubic-bezier(.7,0,.3,1);
     display:flex;
     align-items:center;
-    box-shadow:inset 0 0 50px rgba(0,0,0,.5);
+    box-shadow:inset 0 0 50px rgba(0,0,0,.25);
 }
 
 .curtain-left{
@@ -67,17 +67,25 @@ body{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+
     padding:22px 45px;
+
     background:var(--rose);
     color:#fff;
+
     border:2px solid #fff;
     border-radius:50px;
+
     font-size:1.2rem;
     cursor:pointer;
+
     z-index:10000;
     transition:.4s;
+
     font-family:'Noto Sans Georgian',sans-serif;
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
     white-space:nowrap;
 }
 
@@ -119,10 +127,11 @@ body{
 
     background:
         linear-gradient(
-            rgba(255,255,255,.3),
-            rgba(255,255,255,.3)
+            rgba(255,255,255,.25),
+            rgba(255,255,255,.25)
         ),
-        url('./wedding.jpg') center/cover no-repeat;
+        url('https://placehold.co/1200x700/fce4ec/4a2c2c.png?text=%E1%83%9B%E1%83%9D%E1%83%A1%E1%83%90%E1%83%AC%E1%83%95%E1%83%94%E1%83%95%E1%83%98')
+        center/cover no-repeat;
 
     display:flex;
     flex-direction:column;
@@ -160,7 +169,7 @@ h1{
 
     color:#4a2c2c;
 
-    background:rgba(255,255,255,.85);
+    background:rgba(255,255,255,.88);
 
     padding:30px;
 
@@ -196,17 +205,21 @@ h1{
 .timer{
     display:flex;
     justify-content:center;
-    gap:20px;
+    align-items:center;
 
-    margin-top:20px;
+    gap:28px;
 
-    background:#fff;
+    margin-top:25px;
 
-    padding:15px 35px;
+    background:rgba(255,255,255,.95);
+
+    padding:20px 40px;
 
     border-radius:100px;
 
-    border:1px solid var(--blush);
+    border:2px solid var(--blush);
+
+    box-shadow:0 10px 30px rgba(212,163,163,.2);
 
     max-width:100%;
 }
@@ -214,13 +227,21 @@ h1{
 .timer-unit{
     text-align:center;
     white-space:nowrap;
+    font-size:1rem;
 }
 
 .timer-unit span{
     display:block;
-    font-size:2rem;
+
+    font-size:2.5rem;
+
     font-weight:700;
+
     color:var(--rose);
+
+    line-height:1.1;
+
+    margin-bottom:5px;
 }
 
 /* =========================
@@ -551,7 +572,7 @@ footer h3{
 }
 
 /* ==================================================
-   📱 MOBILE
+   MOBILE
 ================================================== */
 
 @media (max-width:600px){
@@ -623,22 +644,21 @@ footer h3{
 
     .timer{
         width:auto;
-
         max-width:100%;
 
-        gap:8px;
+        gap:16px;
 
-        padding:11px 14px;
+        padding:16px 22px;
 
         border-radius:60px;
     }
 
     .timer-unit{
-        font-size:.8rem;
+        font-size:.9rem;
     }
 
     .timer-unit span{
-        font-size:1.4rem;
+        font-size:1.9rem;
     }
 
     /* SECTIONS */
@@ -838,18 +858,16 @@ footer h3{
 
 <div id="curtain-container">
 
-    
-<div class="curtain curtain-left"></div>
+    <div class="curtain curtain-left"></div>
 
-<button
-    class="open-btn"
-    onclick="openInvitation()"
->
-    გახსენით მოსაწვევი
-</button>
+    <button
+        class="open-btn"
+        onclick="openInvitation()"
+    >
+        გახსენით მოსაწვევი
+    </button>
 
-<div class="curtain curtain-right"></div>
-
+    <div class="curtain curtain-right"></div>
 
 </div>
 
@@ -857,38 +875,36 @@ footer h3{
 
 <div class="hero">
 
+    <h1 class="reveal">
+        ნინუცა & თემო
+    </h1>
 
-<h1 class="reveal">
-    ნინუცა & თემო
-</h1>
-
-<div class="typewriter-container reveal">
-    <div id="welcomeText"></div>
-</div>
-
-<div class="date reveal">
-    03 . 10 . 2026
-</div>
-
-<div class="timer reveal">
-
-    <div class="timer-unit">
-        <span id="days">00</span>
-        დღე
+    <div class="typewriter-container reveal">
+        <div id="welcomeText"></div>
     </div>
 
-    <div class="timer-unit">
-        <span id="hours">00</span>
-        სთ
+    <div class="date reveal">
+        03 . 10 . 2026
     </div>
 
-    <div class="timer-unit">
-        <span id="minutes">00</span>
-        წთ
+    <div class="timer reveal">
+
+        <div class="timer-unit">
+            <span id="days">00</span>
+            დღე
+        </div>
+
+        <div class="timer-unit">
+            <span id="hours">00</span>
+            სთ
+        </div>
+
+        <div class="timer-unit">
+            <span id="minutes">00</span>
+            წთ
+        </div>
+
     </div>
-
-</div>
-
 
 </div>
 
@@ -896,126 +912,124 @@ footer h3{
 
 <div class="section">
 
+    <h2 class="reveal">
+        დღის განრიგი
+    </h2>
 
-<h2 class="reveal">
-    დღის განრიგი
-</h2>
+    <!-- CHURCH -->
 
+    <div class="card reveal">
 
-<!-- CHURCH -->
-<div class="card reveal">
+        <img
+            src="./metekhi.church.jpg"
+            class="ceremony-img"
+            alt="ჯვრისწერა"
+        >
 
-    <img
-        src="./metekhi.church.jpg"
-        class="ceremony-img"
-        alt="ჯვრისწერა"
-    >
+        <h3>
+            ჯვრისწერა
+        </h3>
 
-    <h3>
-        ჯვრისწერა
-    </h3>
+        <div class="time-label">
+            14:00
+        </div>
 
-    <div class="time-label">
-        14:00
+        <p style="font-size:1.2rem">
+            <strong>
+                მეტეხის ტაძარი (ძველი თბილისი)
+            </strong>
+        </p>
+
+        <a
+            href="https://maps.google.com/?q=Metekhi+Church+Tbilisi"
+            target="_blank"
+            class="map-link"
+        >
+            გახსენით რუკა აქ
+        </a>
+
     </div>
 
-    <p style="font-size:1.2rem">
-        <strong>
-            მეტეხის ტაძარი (ძველი თბილისი)
-        </strong>
-    </p>
+    <!-- MEAL -->
 
-    <a
-        href="https://maps.google.com/?q=Metekhi+Church+Tbilisi"
-        target="_blank"
-        class="map-link"
-    >
-        გახსენით რუკა აქ
-    </a>
+    <div class="card reveal">
 
-</div>
+        <img
+            src="./chairs.jpg"
+            class="ceremony-img"
+            alt="ხელისმოწერა და ვახშამი"
+        >
 
+        <h3>
+            ხელისმოწერა და ვახშამი
+        </h3>
 
-<!-- MEAL -->
-<div class="card reveal">
+        <div class="time-label">
+            17:00
+        </div>
 
-    <img
-        src="./chairs.jpg"
-        class="ceremony-img"
-        alt="ხელისმოწერა და ვახშამი"
-    >
+        <p style="font-size:1.2rem">
+            <strong>
+                Mil Georgia (მილ ჯორჯია)
+            </strong>
+        </p>
 
-    <h3>
-        ხელისმოწერა და ვახშამი
-    </h3>
+        <a
+            href="https://maps.app.goo.gl/8YVXx68awV7n3KWP6"
+            target="_blank"
+            class="map-link"
+        >
+            გახსენით რუკა აქ
+        </a>
 
-    <div class="time-label">
-        17:00
     </div>
 
-    <p style="font-size:1.2rem">
-        <strong>
-             Mil Georgia (მილ ჯორჯია)
-        </strong>
-    </p>
+    <!-- DRESS CODE -->
 
-    <a
-        href="https://maps.app.goo.gl/8YVXx68awV7n3KWP6"
-        target="_blank"
-        class="map-link"
-    >
-        გახსენით რუკა აქ
-    </a>
-
-</div>
-
-
-<!-- DRESS CODE -->
-<div
-    class="card reveal"
-    style="
-        background:#fffafa;
-        border:2px dashed var(--rose)
-    "
->
-
-    <span
+    <div
+        class="card reveal"
         style="
-            font-size:3.5rem;
-            display:block;
-            margin-bottom:15px
+            background:#fffafa;
+            border:2px dashed var(--rose)
         "
     >
-        🌸
-    </span>
 
-    <h3
-        style="
-            font-family:'Dancing Script';
-            font-size:3rem
-        "
-    >
-        Dress Code
-    </h3>
+        <span
+            style="
+                font-size:3.5rem;
+                display:block;
+                margin-bottom:15px
+            "
+        >
+            🌸
+        </span>
 
-    <p>
-        Formal / სადღესასწაულო სამოსი
-    </p>
+        <h3
+            style="
+                font-family:'Dancing Script';
+                font-size:3rem
+            "
+        >
+            Dress Code
+        </h3>
 
-    <span
-        style="
-            color:#c2185b;
-            font-weight:bold;
-            display:block;
-            margin-top:20px
-        "
-    >
-        ✨ მანდილოსნებს გთხოვთ, ნუ გამოიყენებთ თეთრ სამოსს,
-        პატარძლის პატივისცემის ნიშნად.
-    </span>
+        <p>
+            Formal / სადღესასწაულო სამოსი
+        </p>
 
-</div>
+        <span
+            style="
+                color:#c2185b;
+                font-weight:bold;
+                display:block;
+                margin-top:20px
+            "
+        >
+            ✨ მანდილოსნებს გთხოვთ, ნუ გამოიყენებთ თეთრ სამოსს,
+            პატარძლის პატივისცემის ნიშნად.
+        </span>
 
+    </div>
 
 </div>
 
@@ -1023,99 +1037,95 @@ footer h3{
 
 <div class="section reveal">
 
+    <h2 class="rsvp-title">
+        დასტურის ფორმა
+    </h2>
 
-<h2 class="rsvp-title">
-    დასტურის ფორმა
-</h2>
+    <p style="margin-bottom:30px">
+        იქნებით ჩვენს განსაკუთრებულ დღეზე?
+    </p>
 
-<p style="margin-bottom:30px">
-    იქნებით ჩვენს განსაკუთრებულ დღეზე?
-</p>
+    <div class="card rsvp-box">
 
-<div class="card rsvp-box">
-
-    <form
-        action="https://api.web3forms.com/submit"
-        method="POST"
-    >
-
-        <input
-            type="hidden"
-            name="access_key"
-            value="18c57851-7c8e-4724-8217-237792511177"
+        <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
         >
-
-        <input
-            type="hidden"
-            name="subject"
-            value="ახალი დასტური ქორწილზე! 🥂"
-        >
-
-        <input
-            type="hidden"
-            name="from_name"
-            value="მოსაწვევი"
-        >
-
-        <input
-            type="hidden"
-            name="redirect"
-            value="https://wedding-invite-2-n378pvkxc-goderdzishvili12-5594.vercel.app"
-        >
-
-        <input
-            type="text"
-            name="სახელი და გვარი"
-            placeholder="თქვენი სახელი და გვარი"
-            required
-        >
-
-        <div class="attendance-options">
 
             <input
-                type="radio"
-                name="სტატუსი"
-                value="მოვალ"
-                id="coming"
+                type="hidden"
+                name="access_key"
+                value="18c57851-7c8e-4724-8217-237792511177"
+            >
+
+            <input
+                type="hidden"
+                name="subject"
+                value="ახალი დასტური ქორწილზე! 🥂"
+            >
+
+            <input
+                type="hidden"
+                name="from_name"
+                value="მოსაწვევი"
+            >
+
+            <input
+                type="hidden"
+                name="redirect"
+                value="https://wedding-invite-2-n378pvkxc-goderdzishvili12-5594.vercel.app"
+            >
+
+            <input
+                type="text"
+                name="სახელი და გვარი"
+                placeholder="თქვენი სახელი და გვარი"
                 required
             >
 
-            <label
-                for="coming"
-                class="option-label"
+            <div class="attendance-options">
+
+                <input
+                    type="radio"
+                    name="სტატუსი"
+                    value="მოვალ"
+                    id="coming"
+                    required
+                >
+
+                <label
+                    for="coming"
+                    class="option-label"
+                >
+                    მოვალ
+                </label>
+
+                <input
+                    type="radio"
+                    name="სტატუსი"
+                    value="ვერ მოვალ"
+                    id="not-coming"
+                >
+
+                <label
+                    for="not-coming"
+                    class="option-label"
+                >
+                    ვერ მოვალ
+                </label>
+
+            </div>
+
+            <button
+                type="submit"
+                class="submit-btn"
             >
-                მოვალ
-            </label>
+                გაგზავნა
+            </button>
 
+        </form>
 
-            <input
-                type="radio"
-                name="სტატუსი"
-                value="ვერ მოვალ"
-                id="not-coming"
-            >
-
-            <label
-                for="not-coming"
-                class="option-label"
-            >
-                ვერ მოვალ
-            </label>
-
-        </div>
-
-
-        <button
-            type="submit"
-            class="submit-btn"
-        >
-            გაგზავნა
-        </button>
-
-    </form>
-
-</div>
-
+    </div>
 
 </div>
 
@@ -1123,51 +1133,48 @@ footer h3{
 
 <div class="section">
 
+    <h2 class="reveal">
+        სურვილების წიგნი
+    </h2>
 
-<h2 class="reveal">
-    სურვილების წიგნი
-</h2>
+    <div
+        id="wishList"
+        class="reveal"
+        style="
+            max-width:650px;
+            margin:0 auto 40px
+        "
+    ></div>
 
-<div
-    id="wishList"
-    class="reveal"
-    style="
-        max-width:650px;
-        margin:0 auto 40px
-    "
-></div>
-
-
-<div
-    class="card reveal"
-    style="
-        max-width:650px;
-        margin:0 auto
-    "
->
-
-    <input
-        type="text"
-        id="wishName"
-        placeholder="თქვენი სახელი"
+    <div
+        class="card reveal"
+        style="
+            max-width:650px;
+            margin:0 auto
+        "
     >
 
-    <textarea
-        id="wishText"
-        rows="4"
-        placeholder="დაგვიწერეთ თქვენი სურვილი..."
-    ></textarea>
+        <input
+            type="text"
+            id="wishName"
+            placeholder="თქვენი სახელი"
+        >
 
-    <button
-        onclick="saveWish()"
-        class="submit-btn"
-        style="background:var(--emerald)"
-    >
-        გაგზავნა
-    </button>
+        <textarea
+            id="wishText"
+            rows="4"
+            placeholder="დაგვიწერეთ თქვენი სურვილი..."
+        ></textarea>
 
-</div>
+        <button
+            onclick="saveWish()"
+            class="submit-btn"
+            style="background:var(--emerald)"
+        >
+            გაგზავნა
+        </button>
 
+    </div>
 
 </div>
 
@@ -1175,15 +1182,13 @@ footer h3{
 
 <footer>
 
+    <h3>
+        სიყვარულით, ნინუცა და თემო
+    </h3>
 
-<h3>
-    სიყვარულით, ნინუცა და თემო
-</h3>
-
-<p style="margin-top:20px;opacity:.6">
-    2026
-</p>
-
+    <p style="margin-top:20px;opacity:.6">
+        2026
+    </p>
 
 </footer>
 
@@ -1347,7 +1352,6 @@ setInterval(
             weddingDate -
             new Date().getTime();
 
-
         document
             .getElementById('days')
             .innerText =
@@ -1355,7 +1359,6 @@ setInterval(
                 diff /
                 (1000*60*60*24)
             );
-
 
         document
             .getElementById('hours')
@@ -1368,7 +1371,6 @@ setInterval(
                 /
                 (1000*60*60)
             );
-
 
         document
             .getElementById('minutes')
@@ -1509,3 +1511,4 @@ window.onload = reveal;
 
 </body>
 </html>
+```
