@@ -584,10 +584,10 @@ footer h3{
     /* MAIN TITLE */
 
     h1{
-    font-size:clamp(2.4rem,11vw,3.5rem);
-    line-height:1.1;
-    width:100%;
-}
+        font-size:clamp(2.4rem,11vw,3.5rem);
+        line-height:1.1;
+        width:100%;
+    }
 
     /* WELCOME */
 
@@ -836,18 +836,16 @@ footer h3{
 
 <div id="curtain-container">
 
-    
-<div class="curtain curtain-left"></div>
+    <div class="curtain curtain-left"></div>
 
-<button
-    class="open-btn"
-    onclick="openInvitation()"
->
-    გახსენით მოსაწვევი
-</button>
+    <button
+        class="open-btn"
+        onclick="openInvitation()"
+    >
+        გახსენით მოსაწვევი
+    </button>
 
-<div class="curtain curtain-right"></div>
-
+    <div class="curtain curtain-right"></div>
 
 </div>
 
@@ -855,38 +853,36 @@ footer h3{
 
 <div class="hero">
 
+    <h1 class="reveal">
+        ნინუცა & თემო
+    </h1>
 
-<h1 class="reveal">
-    ნინუცა & თემო
-</h1>
-
-<div class="typewriter-container reveal">
-    <div id="welcomeText"></div>
-</div>
-
-<div class="date reveal">
-    03 . 10 . 2026
-</div>
-
-<div class="timer reveal">
-
-    <div class="timer-unit">
-        <span id="days">00</span>
-        დღე
+    <div class="typewriter-container reveal">
+        <div id="welcomeText"></div>
     </div>
 
-    <div class="timer-unit">
-        <span id="hours">00</span>
-        სთ
+    <div class="date reveal">
+        03 . 10 . 2026
     </div>
 
-    <div class="timer-unit">
-        <span id="minutes">00</span>
-        წთ
+    <div class="timer reveal">
+
+        <div class="timer-unit">
+            <span id="days">00</span>
+            დღე
+        </div>
+
+        <div class="timer-unit">
+            <span id="hours">00</span>
+            სთ
+        </div>
+
+        <div class="timer-unit">
+            <span id="minutes">00</span>
+            წთ
+        </div>
+
     </div>
-
-</div>
-
 
 </div>
 
@@ -894,296 +890,338 @@ footer h3{
 
 <div class="section">
 
+    <h2 class="reveal">
+        დღის განრიგი
+    </h2>
 
-<h2 class="reveal">
-    დღის განრიგი
-</h2>
 
+    <!-- =========================
+         CHURCH
+    ========================= -->
 
-<!-- CHURCH -->
-<div class="card reveal">
+    <div class="card reveal">
 
-    <img
-        src="./metekhi.church.jpg"
-        class="ceremony-img"
-        alt="ჯვრისწერა"
-    >
+        <img
+            src="./metekhi.church.jpg"
+            class="ceremony-img"
+            alt="ჯვრისწერა"
+        >
 
-    <h3>
-        ჯვრისწერა
-    </h3>
+        <h3>
+            ჯვრისწერა
+        </h3>
 
-    <div class="time-label">
-        14:00
+        <div class="time-label">
+            14:00
+        </div>
+
+        <p style="font-size:1.2rem">
+            <strong>
+                მეტეხის ტაძარი (ძველი თბილისი)
+            </strong>
+        </p>
+
+        <a
+            href="https://maps.google.com/?q=Metekhi+Church+Tbilisi"
+            target="_blank"
+            class="map-link"
+        >
+            გახსენით რუკა აქ
+        </a>
+
     </div>
 
-    <p style="font-size:1.2rem">
-        <strong>
-            მეტეხის ტაძარი (ძველი თბილისი)
-        </strong>
-    </p>
 
-    <a
-        href="https://maps.google.com/?q=Metekhi+Church+Tbilisi"
-        target="_blank"
-        class="map-link"
-    >
-        გახსენით რუკა აქ
-    </a>
+    <!-- =========================
+         SIGNING
+    ========================= -->
 
-</div>
+    <div class="card reveal">
 
+        <img
+            src="./signing.jpg"
+            class="ceremony-img"
+            alt="ხელისმოწერა"
+        >
 
-<!-- MEAL -->
-<div class="card reveal">
+        <h3>
+            ხელისმოწერა
+        </h3>
 
-    <img
-        src="./chairs.jpg"
-        class="ceremony-img"
-        alt="ხელისმოწერა და ვახშამი"
-    >
+        <div class="time-label">
+            17:00
+        </div>
 
-    <h3>
-        ხელისმოწერა და ვახშამი
-   </h3>
+        <p style="font-size:1.2rem">
+            <strong>
+                Mil Georgia (მილ ჯორჯია)
+            </strong>
+        </p>
 
-    <div class="time-label">
-        19:00
+        <a
+            href="https://maps.app.goo.gl/8YVXx68awV7n3KWP6"
+            target="_blank"
+            class="map-link"
+        >
+            გახსენით რუკა აქ
+        </a>
+
     </div>
 
-    <p style="font-size:1.2rem">
-        <strong>
-            Mil Georgia (მილ ჯორჯია)
-        </strong>
-    </p>
 
-    <a
-        href="https://maps.app.goo.gl/8YVXx68awV7n3KWP6"
-        target="_blank"
-        class="map-link"
+    <!-- =========================
+         DINNER
+    ========================= -->
+
+    <div class="card reveal">
+
+        <img
+            src="./dinner.jpg"
+            class="ceremony-img"
+            alt="ვახშამი"
+        >
+
+        <h3>
+            ვახშამი
+        </h3>
+
+        <div class="time-label">
+            18:30
+        </div>
+
+        <p style="font-size:1.2rem">
+            <strong>
+                Mil Georgia (მილ ჯორჯია)
+            </strong>
+        </p>
+
+        <a
+            href="https://maps.app.goo.gl/8YVXx68awV7n3KWP6"
+            target="_blank"
+            class="map-link"
+        >
+            გახსენით რუკა აქ
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         DRESS CODE
+    ========================= -->
+
+    <div
+        class="card reveal"
+        style="
+            background:#fffafa;
+            border:2px dashed var(--rose)
+        "
     >
-        გახსენით რუკა აქ
-    </a>
+
+        <span
+            style="
+                font-size:3.5rem;
+                display:block;
+                margin-bottom:15px
+            "
+        >
+            🌸
+        </span>
+
+        <h3
+            style="
+                font-family:'Dancing Script';
+                font-size:3rem
+            "
+        >
+            Dress Code
+        </h3>
+
+        <p>
+            Formal / სადღესასწაულო სამოსი
+        </p>
+
+        <span
+            style="
+                color:#c2185b;
+                font-weight:bold;
+                display:block;
+                margin-top:20px
+            "
+        >
+            ✨ მანდილოსნებს გთხოვთ, ნუ გამოიყენებთ თეთრ სამოსს,
+            პატარძლის პატივისცემის ნიშნად.
+        </span>
+
+    </div>
 
 </div>
 
-
-<!-- DRESS CODE -->
-<div
-    class="card reveal"
-    style="
-        background:#fffafa;
-        border:2px dashed var(--rose)
-    "
->
-
-    <span
-        style="
-            font-size:3.5rem;
-            display:block;
-            margin-bottom:15px
-        "
-    >
-        🌸
-    </span>
-
-    <h3
-        style="
-            font-family:'Dancing Script';
-            font-size:3rem
-        "
-    >
-        Dress Code
-    </h3>
-
-    <p>
-        Formal / სადღესასწაულო სამოსი
-    </p>
-
-    <span
-        style="
-            color:#c2185b;
-            font-weight:bold;
-            display:block;
-            margin-top:20px
-        "
-    >
-        ✨ მანდილოსნებს გთხოვთ, ნუ გამოიყენებთ თეთრ სამოსს,
-        პატარძლის პატივისცემის ნიშნად.
-    </span>
-
-</div>
-
-
-</div>
 
 <!-- RSVP -->
 
 <div class="section reveal">
 
+    <h2 class="rsvp-title">
+        დასტურის ფორმა
+    </h2>
 
-<h2 class="rsvp-title">
-    დასტურის ფორმა
-</h2>
+    <p style="margin-bottom:30px">
+        იქნებით ჩვენს განსაკუთრებულ დღეზე?
+    </p>
 
-<p style="margin-bottom:30px">
-    იქნებით ჩვენს განსაკუთრებულ დღეზე?
-</p>
+    <div class="card rsvp-box">
 
-<div class="card rsvp-box">
-
-    <form
-        action="https://api.web3forms.com/submit"
-        method="POST"
-    >
-
-        <input
-            type="hidden"
-            name="access_key"
-            value="18c57851-7c8e-4724-8217-237792511177"
+        <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
         >
-
-        <input
-            type="hidden"
-            name="subject"
-            value="ახალი დასტური ქორწილზე! 🥂"
-        >
-
-        <input
-            type="hidden"
-            name="from_name"
-            value="მოსაწვევი"
-        >
-
-        <input
-            type="hidden"
-            name="redirect"
-            value="https://wedding-invite-2-n378pvkxc-goderdzishvili12-5594.vercel.app"
-        >
-
-        <input
-            type="text"
-            name="სახელი და გვარი"
-            placeholder="თქვენი სახელი და გვარი"
-            required
-        >
-
-        <div class="attendance-options">
 
             <input
-                type="radio"
-                name="სტატუსი"
-                value="მოვალ"
-                id="coming"
+                type="hidden"
+                name="access_key"
+                value="18c57851-7c8e-4724-8217-237792511177"
+            >
+
+            <input
+                type="hidden"
+                name="subject"
+                value="ახალი დასტური ქორწილზე! 🥂"
+            >
+
+            <input
+                type="hidden"
+                name="from_name"
+                value="მოსაწვევი"
+            >
+
+            <input
+                type="hidden"
+                name="redirect"
+                value="https://wedding-invite-2-n378pvkxc-goderdzishvili12-5594.vercel.app"
+            >
+
+            <input
+                type="text"
+                name="სახელი და გვარი"
+                placeholder="თქვენი სახელი და გვარი"
                 required
             >
 
-            <label
-                for="coming"
-                class="option-label"
+            <div class="attendance-options">
+
+                <input
+                    type="radio"
+                    name="სტატუსი"
+                    value="მოვალ"
+                    id="coming"
+                    required
+                >
+
+                <label
+                    for="coming"
+                    class="option-label"
+                >
+                    მოვალ
+                </label>
+
+
+                <input
+                    type="radio"
+                    name="სტატუსი"
+                    value="ვერ მოვალ"
+                    id="not-coming"
+                >
+
+                <label
+                    for="not-coming"
+                    class="option-label"
+                >
+                    ვერ მოვალ
+                </label>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit-btn"
             >
-                მოვალ
-            </label>
+                გაგზავნა
+            </button>
 
+        </form>
 
-            <input
-                type="radio"
-                name="სტატუსი"
-                value="ვერ მოვალ"
-                id="not-coming"
-            >
-
-            <label
-                for="not-coming"
-                class="option-label"
-            >
-                ვერ მოვალ
-            </label>
-
-        </div>
-
-
-        <button
-            type="submit"
-            class="submit-btn"
-        >
-            გაგზავნა
-        </button>
-
-    </form>
+    </div>
 
 </div>
 
-
-</div>
 
 <!-- WISHES -->
 
 <div class="section">
 
+    <h2 class="reveal">
+        სურვილების წიგნი
+    </h2>
 
-<h2 class="reveal">
-    სურვილების წიგნი
-</h2>
-
-<div
-    id="wishList"
-    class="reveal"
-    style="
-        max-width:650px;
-        margin:0 auto 40px
-    "
-></div>
+    <div
+        id="wishList"
+        class="reveal"
+        style="
+            max-width:650px;
+            margin:0 auto 40px
+        "
+    ></div>
 
 
-<div
-    class="card reveal"
-    style="
-        max-width:650px;
-        margin:0 auto
-    "
->
-
-    <input
-        type="text"
-        id="wishName"
-        placeholder="თქვენი სახელი"
+    <div
+        class="card reveal"
+        style="
+            max-width:650px;
+            margin:0 auto
+        "
     >
 
-    <textarea
-        id="wishText"
-        rows="4"
-        placeholder="დაგვიწერეთ თქვენი სურვილი..."
-    ></textarea>
+        <input
+            type="text"
+            id="wishName"
+            placeholder="თქვენი სახელი"
+        >
 
-    <button
-        onclick="saveWish()"
-        class="submit-btn"
-        style="background:var(--emerald)"
-    >
-        გაგზავნა
-    </button>
+        <textarea
+            id="wishText"
+            rows="4"
+            placeholder="დაგვიწერეთ თქვენი სურვილი..."
+        ></textarea>
+
+        <button
+            onclick="saveWish()"
+            class="submit-btn"
+            style="background:var(--emerald)"
+        >
+            გაგზავნა
+        </button>
+
+    </div>
 
 </div>
 
-
-</div>
 
 <!-- FOOTER -->
 
 <footer>
 
+    <h3>
+        სიყვარულით, ნინუცა და თემო
+    </h3>
 
-<h3>
-    სიყვარულით, ნინუცა და თემო
-</h3>
-
-<p style="margin-top:20px;opacity:.6">
-    2026
-</p>
-
+    <p style="margin-top:20px;opacity:.6">
+        2026
+    </p>
 
 </footer>
+
 
 <!-- YOUTUBE -->
 
@@ -1218,10 +1256,12 @@ function onYouTubeIframeAPIReady(){
 
             events:{
                 onError:function(e){
+
                     console.log(
                         'YouTube error:',
                         e.data
                     );
+
                 }
             }
         }
@@ -1432,6 +1472,7 @@ async function saveWish(){
         .getElementById('wishName')
         .value='';
 
+
     document
         .getElementById('wishText')
         .value='';
@@ -1507,5 +1548,3 @@ window.onload = reveal;
 
 </body>
 </html>
-
-
